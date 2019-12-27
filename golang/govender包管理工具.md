@@ -70,6 +70,10 @@ govendor get github.com/go-sql-driver/mysql
 
 `govendor fetch +v`
 
+#### 3.4 从本地更新
+
+`govendor update +e`
+
 ### 4 常见错误
 
 服务器提示某个依赖包没有找到：cannot find package 。。。
