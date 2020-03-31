@@ -25,6 +25,19 @@
 
 ### 3.包管理
 
+|状态	   |缩写	|含义 |
+|----------|--------|-----|
+|+local    |	l   |	本地包，即项目自身的包组织
+|+external |	e	|外部包， 被GOPATH管理
+|+vender   |	v	|被govender 管理
+|+std	   |    s   |标准库
+|+unused   |    u   |	未使用的包
+|+missing  |	m	|代码引用了依赖包，但是该包找到
+|+program  |    p   |	主程序包，意味着可以编译为执行文件
+|+outside  |        |	外部包和缺失的包
+|+all	   |        |所有包
+
+
 #### 3.1常用命令
 
 常见的命令如下，格式为 `govendor COMMAND`。
@@ -72,7 +85,11 @@ govendor get github.com/go-sql-driver/mysql
 
 #### 3.4 从本地更新
 
-`govendor update +e`
+`govendor update +v`
+
+
+#### 3.5 删除没用依赖
+`govendor remove +u`
 
 ### 4 常见错误
 

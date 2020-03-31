@@ -92,3 +92,24 @@ database：用户同名数据库
 \password [user]: 修改用户密码
 \q：退出
 ```
+
+```
+1. *创建数据库： create database [数据库名]; 
+2. *查看数据库列表： \d 
+3. *删除数据库： . drop database [数据库名]; 
+创建表： create table ([字段名1] [类型1] <references 关联表名(关联的字段名)>;,[字段名2] [类型2],......<,primary key (字段名m,字段名n,...)>;); 
+*查看表名列表： \d 
+*查看某个表的状况： \d [表名] 
+*重命名一个表： alter table [表名A] rename to [表名B]; 
+*删除一个表： drop table [表名]; 
+
+*在已有的表里添加字段： alter table [表名] add column [字段名] [类型]; 
+*删除表中的字段： alter table [表名] drop column [字段名]; 
+*重命名一个字段： alter table [表名] rename column [字段名A] to [字段名B]; 
+*给一个字段设置缺省值： alter table [表名] alter column [字段名] set default [新的默认值]; 
+*去除缺省值： alter table [表名] alter column [字段名] drop default; 
+在表中插入数据： insert into 表名 ([字段名m],[字段名n],......) values ([列m的值],[列n的值],......); 
+修改表中的某行某列的数据： update [表名] set [目标字段名]=[目标值] where [该行特征]; 
+删除表中某行数据： delete from [表名] where [该行特征]; 
+delete from [表名];--删空整个表
+```
