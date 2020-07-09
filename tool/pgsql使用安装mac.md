@@ -113,3 +113,5 @@ database：用户同名数据库
 删除表中某行数据： delete from [表名] where [该行特征]; 
 delete from [表名];--删空整个表
 ```
+
+ANSI SQL 标准规定不加双引号的表名大小写不敏感，加双引号大小写敏感。

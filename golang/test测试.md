@@ -174,3 +174,10 @@ func Benchmark_Add_TimerControl(b *testing.B) {
 }
 ```
 从 Benchmark() 函数开始，Timer 就开始计数。StopTimer() 可以停止这个计数过程，做一些耗时的操作，通过 StartTimer() 重新开始计时。ResetTimer() 可以重置计数器的数据。
+
+#### 6) 覆盖率测试
+
+```
+go test -covermode=count -v -coverprofile=coverage.out -run=.
+go tool cover -html=coverage.out
+```
