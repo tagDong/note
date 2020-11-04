@@ -1,8 +1,2 @@
-中间件—消息队列
-Kafka
-RocketMQ
-
-中间件—负载均衡
-HAProxy	
-Nginx	
-Keepalived
+1. 日志系统。对于程序中的流程输出尽可能规范。debug日志，info日志。
+2. 确定debug release版本。最好能在编译时直接编译对应版本。主要是日志系统。
