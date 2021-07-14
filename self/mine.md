@@ -1,6 +1,1 @@
-1. 日志系统。对于程序中的流程输出尽可能规范。debug日志，info日志。
-2. 确定debug release版本。最好能在编译时直接编译对应版本。主要是日志系统。
-
-
-排序算法看一遍 mysql索引 b+
-
+git代理  export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
