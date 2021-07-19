@@ -9,3 +9,5 @@
 ### 将本地Git分支推送到远程的master分支
 
 `git push origin develop:master`
+`git push <remote> <local branch name>:<remote branch to push into>`
+
