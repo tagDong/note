@@ -6,7 +6,7 @@
 2. 本地已经创建了dev的分支，需要手动切换
 
 
-### 将本地Git分支推送到远程的master分支
+### 将本地Git分支develop推送到远程的master分支
 
 `git push origin develop:master`
 `git push <remote> <local branch name>:<remote branch to push into>`
