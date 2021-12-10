@@ -38,27 +38,27 @@ mac安装postgresql后不会创建用户名数据库，执行命令：
 
 之后需要做以下几件事：
 
-1.创建postgres用户
+1.创建dbuser用户
 
-` CREATE USER postgres WITH PASSWORD 'password';`
+` CREATE USER dbuser WITH PASSWORD 'password';`
 
 2.删除默认生成的postgres数据库
 
 ` DROP DATABASE postgres;`
 
-3.创建属于postgres用户的postgres数据库
+3.创建属于dbuser用户的test数据库
 
-` CREATE DATABASE postgres OWNER postgres;`
+` CREATE DATABASE test OWNER dbuser;`
 
-4.将数据库所有权限赋予postgres用户
+4.将数据库所有权限赋予dbuser用户
 
-` GRANT ALL PRIVILEGES ON DATABASE postgres to postgres;`
+` GRANT ALL PRIVILEGES ON DATABASE test to dbuser;`
 
-5.给postgres用户添加创建数据库的属性
+5.给dbuser用户添加创建数据库的属性
 
-` ALTER ROLE postgres CREATEDB;`
+` ALTER ROLE dbuser CREATEDB;`
 
-这样就可以使用postgres作为数据库的登录用户了，并可以使用该用户管理数据库
+这样就可以使用dbuser作为数据库的登录用户了，并可以使用该用户管理数据库
 
 ### 登录控制台指令
 `psql -U [user] -d [database] -h [host] -p [post]`
